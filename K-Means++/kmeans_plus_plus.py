@@ -95,7 +95,6 @@ class KmeansPP:
             if len(cluster_points) > 0:
                 new_centers.append(np.mean(cluster_points, axis=0))
             else:
-                # Nếu không có điểm nào trong cụm, giữ nguyên tâm cụm cũ
                 new_centers.append(self.centers[i])
         
         return np.array(new_centers)
